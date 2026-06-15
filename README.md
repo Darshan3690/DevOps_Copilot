@@ -1,545 +1,321 @@
-# 🚀 InfraWatch AI – Multi-LLM DevOps Copilot
+🚀 Multi-LLM Chat System
+
+
 
 <div align="center">
 
-<img src="https://placehold.co/1200x300/1e293b/ffffff?text=InfraWatch+AI+-+DevOps+Copilot" alt="InfraWatch AI Banner"/>
-
-### AI-Powered Infrastructure Monitoring, Incident Analysis & Multi-LLM Platform
-
-Monitor infrastructure, analyze logs with Gemini AI, receive intelligent alerts, and compare responses across multiple LLMs from a single platform.
-
-Built with **Next.js, Clerk, Supabase, Docker, Redis, Nginx, Python, Gemini API, and GitHub Actions.**
+<img src="https://www.google.com/search?q=https://placehold.co/800x250/1e293b/ffffff%3Ftext%3DMulti-LLM%2BChat%2BSystem%26font%3Dinter" alt="Project Banner">
 
 </div>
 
----
-
-## 📌 Overview
-
-InfraWatch AI started as a Multi-LLM Chat System and evolved into a complete DevOps + AIOps platform.
-
-The system enables users to:
-
-* Compare responses from multiple LLMs simultaneously
-* Persist chat history securely
-* Monitor infrastructure health
-* Analyze logs using AI
-* Detect incidents automatically
-* Receive email alerts
-* Track API usage and system metrics
-* Manage deployments using DevOps best practices
 
----
 
-# 🏗 Architecture
+<p align="center">
 
-```text
-User
- │
- ▼
-Clerk Authentication
- │
- ▼
-Nginx Reverse Proxy
- │
- ▼
-Next.js Application
- │
- ├────────► Gemini API
- │
- ├────────► OpenAI API
- │
- ├────────► Claude API
- │
- ├────────► Supabase PostgreSQL
- │
- └────────► Redis Cache
-                 │
-                 ▼
-          Monitoring Service
-                 │
-                 ▼
-            Gmail Alerts
-                 │
-                 ▼
-         AI Log Analyzer
-                 │
-                 ▼
-        Incident Dashboard
-```
+<strong>Empowering Conversations with Limitless AI Intelligence</strong>
 
----
+<br />
 
-# ✨ Core Features
+A powerful, feature-rich Progressive Web App (PWA) for interacting with multiple large language models simultaneously.
 
-## 🤖 Multi-LLM Chat System
+<br />
 
-* GPT Support
-* Gemini Support
-* Claude Support
-* Side-by-side response comparison
-* Streaming responses
-* Custom temperature settings
-* Model selection panel
+Compare responses side-by-side, manage chat history, track usage, and customize your experience.
 
----
+</p>
 
-## 🔐 Authentication
 
-Powered by Clerk.
 
-Features:
+<p align="center">
 
-* Google Login
-* GitHub Login
-* Secure Session Management
-* Protected Dashboard Routes
+<a href="#-features"><strong>Features</strong></a> ·
 
----
+<a href="#-tech-stack"><strong>Tech Stack</strong></a> ·
 
-## 💬 Persistent Chat History
+<a href="#-getting-started"><strong>Getting Started</strong></a> ·
 
-Stored in Supabase PostgreSQL.
+<a href="#-how-to-use"><strong>How to Use</strong></a> ·
 
-Features:
+<a href="#-contributing"><strong>Contributing</strong></a> ·
 
-* Conversation storage
-* Message history
-* Search conversations
-* Continue previous chats
+<a href="#-license"><strong>License</strong></a>
 
----
+</p>
 
-## 📊 Usage Analytics
+📌 Core Features
 
-Track:
 
-* Total Requests
-* Token Consumption
-* Model Usage
-* Response Statistics
 
----
+    🔑 Dynamic Model Management: Securely add, select, and manage API keys for various LLMs (e.g., GPT, Gemini, Claude) via an intuitive modal. Keys are stored locally on your device for privacy.
 
-## ⚡ Redis Caching
 
-Features:
 
-* Gemini response caching
-* Faster repeated queries
-* Reduced API costs
-* Session optimization
+    🔄 Simultaneous & Comparative Responses: Enter a single prompt and receive responses from all selected AI models in parallel, allowing for direct and immediate comparison of their outputs, styles, and knowledge.
 
----
 
-## 🐳 Dockerized Infrastructure
 
-Application runs in isolated containers.
+    💬 Modern Chat Interface: A clean, responsive, and user-friendly chat interface that supports real-time streaming of responses for a more interactive and dynamic experience.
 
-Services:
 
-* Next.js
-* Redis
-* Monitoring Service
-* Nginx
 
-Benefits:
+    🕒 Persistent Chat History: Automatically saves your conversations to your local device. Browse, search, and revisit past chats anytime in the "Chat History" modal to continue where you left off.
 
-* Reproducible environments
-* Easy deployment
-* Simplified scaling
 
----
 
-## 🔄 CI/CD Pipeline
+    📊 Insightful Usage Statistics: Keep track of your interactions and token usage for each model with a dedicated "Statistics" dashboard to monitor your consumption.
 
-GitHub Actions automatically:
 
-* Install dependencies
-* Run lint checks
-* Run type checking
-* Build application
-* Build Docker image
-* Validate deployment readiness
 
----
+    ⚙️ Advanced Settings & Customization:
 
-## 📈 Infrastructure Monitoring
 
-Python monitoring service tracks:
 
-* CPU Usage
-* Memory Usage
-* Disk Usage
-* Container Health
-* Service Availability
+        Theme Control: Seamlessly switch between light and dark modes.
 
-Metrics are stored in Supabase and displayed in real time.
 
----
 
-## 🧠 AI Log Analysis
+        AI Parameters: Fine-tune AI responses by adjusting parameters like temperature and max tokens for more creative or deterministic outputs.
 
-Powered by Gemini API.
 
-The system automatically analyzes:
 
-* Application Logs
-* Nginx Logs
-* Docker Logs
-* Infrastructure Errors
+    📱 PWA Ready: Installable on desktop and mobile for a native-like experience with offline access to your chat history.
 
-Generates:
 
-* Root Cause Analysis
-* Severity Classification
-* Suggested Fixes
-* Confidence Score
 
-Example:
+    📋 Copy & Export: Easily copy individual responses or export entire conversations in Markdown format.
 
-```json
-{
-  "root_cause": "Redis Container Unavailable",
-  "severity": "High",
-  "suggested_fix": "Restart Redis Container",
-  "confidence": 91
-}
-```
 
----
 
-## 📧 Smart Email Alerts
+🛠️ Tech Stack
 
-Automatic Gmail notifications for:
 
-* High CPU Usage
-* High Memory Usage
-* Disk Space Issues
-* Container Failures
-* Critical Incidents
 
-Example:
+This project is built with a modern, scalable, and type-safe technology stack.
 
-```text
-🚨 InfraWatch Alert
 
-Service:
-Redis
 
-Issue:
-Container Down
+    Framework: Next.js – The React Framework for Production.
 
-Suggested Action:
-Restart Service
 
-Severity:
-High
-```
 
----
+    Styling: Tailwind CSS – A utility-first CSS framework for rapid UI development.
 
-## 📊 DevOps Dashboard
 
-Route:
 
-```text
-/admin/devops
-```
+    UI Library: React – A JavaScript library for building user interfaces.
 
-Features:
 
-* Live CPU Metrics
-* RAM Usage
-* Disk Usage
-* Container Status
-* Alert History
-* AI Incidents
-* Gemini Usage Statistics
-* Redis Cache Metrics
 
----
+    Language: TypeScript – For strong typing and improved developer experience.
 
-## 📱 Progressive Web App (PWA)
 
-Features:
 
-* Installable
-* Responsive
-* Offline Support
-* Mobile Friendly
+    Linting & Formatting: ESLint & Prettier – For maintaining code quality and consistency.
 
----
 
-# 🛠 Tech Stack
 
-## Frontend
+    State Management: React Context API / Zustand (or specify your choice)
 
-* Next.js 15
-* React
-* TypeScript
-* Tailwind CSS
-* Zustand
 
-## Authentication
 
-* Clerk
+    Client-Side Storage: IndexedDB / LocalStorage for persistent history and settings.
 
-## Database
 
-* Supabase PostgreSQL
 
-## Caching
+    Deployment: Vercel / Netlify
 
-* Redis
 
-## DevOps
 
-* Docker
-* Docker Compose
-* Nginx
-* GitHub Actions
+⚡ Getting Started
 
-## Monitoring
 
-* Python
-* psutil
 
-## AI
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-* Gemini API
-* OpenAI API
-* Claude API
+✅ Prerequisites
 
-## Deployment
 
-* WSL Ubuntu
-* Docker
 
----
+    Node.js (v18.x or newer is recommended)
 
-# 📂 Project Structure
 
-```text
-infra-watch-ai/
 
-├── app/
-├── components/
-├── lib/
-│
-├── services/
-│   ├── monitoring/
-│   │   ├── cpu.py
-│   │   ├── memory.py
-│   │   ├── disk.py
-│   │   └── alerts.py
-│   │
-│   └── ai-analysis/
-│       └── analyze_logs.py
-│
-├── docker/
-│   ├── Dockerfile
-│   └── nginx.conf
-│
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-│
-├── supabase/
-│   └── migrations/
-│
-└── README.md
-```
+    npm, yarn, or pnpm package manager.
 
----
 
-# ⚙️ Installation
 
-## Prerequisites
+🔧 Installation
 
-* Node.js 22+
-* Docker Desktop
-* WSL Ubuntu
-* Redis
-* Supabase Project
-* Clerk Account
-* Gemini API Key
 
----
 
-## Clone Repository
+    Clone the repository:
 
-```bash
-git clone https://github.com/Darshan3690/Multi-LLM-Chat-System.git
 
-cd Multi-LLM-Chat-System
-```
 
----
+    git clone [https://github.com/Darshan3690/Multi-LLM-Chat-System.git](https://github.com/Darshan3690/Multi-LLM-Chat-System.git)
 
-## Install Dependencies
 
-```bash
-npm install
-```
 
----
+    Navigate into the project directory:
 
-## Environment Variables
 
-Create `.env.local`
 
-```env
-# Clerk
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+    cd Multi-LLM-Chat-System
 
-# Supabase
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-SUPABASE_SERVICE_KEY=
 
-# Gemini
-GEMINI_API_KEY=
 
-# Redis
-REDIS_URL=redis://localhost:6379
+    Install project dependencies:
 
-# Gmail
-GMAIL_USER=
-GMAIL_APP_PASSWORD=
-ALERT_EMAIL=
 
-# App
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
 
----
+    npm install
 
-# 🐳 Run With Docker
 
-Build:
 
-```bash
-docker compose build
-```
+  
 
-Start:
+    # Example:
 
-```bash
-docker compose up
-```
+    # NEXT_PUBLIC_APP_VERSION=1.0.0
 
-Stop:
 
-```bash
-docker compose down
-```
 
----
+▶️ Running the Application
 
-# 💻 Local Development
 
-```bash
-npm run dev
-```
 
-Open:
+    For development:
 
-```text
-http://localhost:3000
-```
+    This command starts the development server with hot-reloading.
 
----
 
-# 🔄 CI/CD Workflow
 
-```text
-Push Code
-     │
-     ▼
-GitHub Actions
-     │
-     ▼
-Lint
-     │
-     ▼
-Type Check
-     │
-     ▼
-Build
-     │
-     ▼
-Docker Build
-     │
-     ▼
-Deployment Ready
-```
+    npm run dev
 
----
 
-# 📸 Screenshots
 
-Add:
+    Open http://localhost:3000 in your browser to see the result.
 
-* Multi-LLM Chat UI
-* DevOps Dashboard
-* AI Incident Analysis
-* Monitoring Dashboard
-* Gmail Alerts
 
----
 
-# 🚀 Future Enhancements
+    For production:
 
-* Kubernetes Deployment
-* Grafana Dashboard
-* Prometheus Integration
-* Slack Notifications
-* AWS Deployment
-* AI Auto-Remediation
-* Multi-Server Monitoring
-* Incident Prediction
+    To build the application for production and then start the server:
 
----
 
-# 🤝 Contributing
 
-Contributions are welcome.
+    npm run build
 
-1. Fork Repository
-2. Create Feature Branch
+    npm run start
 
-```bash
-git checkout -b feature/amazing-feature
-```
 
-3. Commit Changes
 
-```bash
-git commit -m "Add amazing feature"
-```
+📖 How to Use
 
-4. Push
 
-```bash
-git push origin feature/amazing-feature
-```
 
-5. Create Pull Request
+    🔑 Add Your API Keys:
 
----
 
-# 📄 License
 
-Distributed under the MIT License.
+        Launch the app and click the "Select Models" button.
 
----
+
+
+        Choose the AI models you wish to use.
+
+
+
+        Enter a valid API key for each model and click "Save". Keys are stored securely in your browser's local storage and are never sent to any server.
+
+
+
+    💬 Start Chatting:
+
+
+
+        Type your query in the input field at the bottom.
+
+
+
+        Press Enter or click the "Generate" button.
+
+
+
+        Responses from your selected models will appear in real-time.
+
+
+
+    📜 Access Your History:
+
+
+
+        Click the "History" button to open a modal with a list of all your past conversations.
+
+
+
+        Select any conversation to load it back into the main chat window.
+
+
+
+    📈 Check Your Stats:
+
+
+
+        Open the "Statistics" modal to view a breakdown of your token usage and interaction count for each model.
+
+
+
+    ⚙️ Customize Your Experience:
+
+
+
+        Go to "Settings" to switch between light/dark themes or adjust AI parameters like temperature to control response creativity.
+
+
+
+🤝 Contributing
+
+
+
+Contributions make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+
+
+Please fork the repository and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+
+
+    Fork the Project
+
+
+
+    Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+
+
+    Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+
+
+    Push to the Branch (git push origin feature/AmazingFeature)
+
+
+
+    Open a Pull Request
+
+
+
+📄 License
+
+
+
+This project is distributed under the MIT License. See the LICENSE.txt file for more information.
+
+
 
 <div align="center">
 
-Made with ❤️ by Darshan Rajput
+Made with ❤️ and lots of code.
 
-Building the future of AI-powered DevOps 🚀
-
-</div>
+</div>   
